@@ -63,14 +63,14 @@
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                         <a href="{{ route('departments.show', $department) }}"
-                                            class="bg-black hover:bg-gray-800 text-black font-bold py-1 px-3 rounded mr-2 text-xs">View</a>
+                                            class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-3 rounded mr-2 text-xs">View</a>
                                         <a href="{{ route('departments.edit', $department) }}"
-                                            class="bg-black hover:bg-gray-800 text-black font-bold py-1 px-3 rounded mr-2 text-xs">Edit</a>
+                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded mr-2 text-xs">Edit</a>
                                         <form action="{{ route('departments.destroy', $department) }}" method="POST"
                                             class="inline">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="bg-black hover:bg-gray-800 text-black font-bold py-1 px-3 rounded text-xs"
+                                            <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded text-xs"
                                                 onclick="return confirm('Are you sure you want to delete this department?')">Delete</button>
                                         </form>
                                     </td>
