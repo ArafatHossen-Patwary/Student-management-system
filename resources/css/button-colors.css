@@ -1,55 +1,72 @@
-/* Button color overrides / custom button styles */
-.btn.btn-create {
-  background-color: #28a745;
-  color: #fff;
-  border-color: #28a745;
-}
-.btn.btn-create:hover,
-.btn.btn-create:focus {
-  background-color: #218838;
-  border-color: #1e7e34;
+/* Unified button styles for Student-management-system
+   Implements consistent button system per design:
+   - Primary: #16a34a
+   - Secondary: #2563eb
+   - View: #4f46e5
+   - Warning: #f59e0b
+   - Danger: #dc2626
+   - Neutral: #6b7280
+*/
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0;
+  border-radius: 0.375rem; /* rounded-md */
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  font-weight: 600; /* semibold */
+  color: #fff; /* white text */
+  cursor: pointer;
+  transition: background-color 200ms ease, opacity 200ms ease, color 200ms ease;
+  outline: none;
 }
 
-.btn.btn-update {
-  background-color: #007bff;
-  color: #fff;
-  border-color: #007bff;
-}
-.btn.btn-update:hover,
-.btn.btn-update:focus {
-  background-color: #0069d9;
-  border-color: #005cbf;
+.btn:disabled,
+.btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-.btn.btn-delete {
-  background-color: #dc3545;
-  color: #fff;
-  border-color: #dc3545;
+/* Primary */
+.btn-primary {
+  background-color: #16a34a;
 }
-.btn.btn-delete:hover,
-.btn.btn-delete:focus {
-  background-color: #c82333;
-  border-color: #bd2130;
-}
+.btn-primary:hover { background-color: #15803d; }
+.btn-primary:focus { box-shadow: 0 0 0 4px rgba(22,163,74,0.16); }
 
-/* Optional: outline variants */
-.btn-outline-create {
-  color: #28a745;
-  border: 1px solid #28a745;
-  background: transparent;
-}
-.btn-outline-create:hover { background:#28a745; color:#fff; }
+/* Secondary (Edit) */
+.btn-secondary { background-color: #2563eb; }
+.btn-secondary:hover { background-color: #1d4ed8; }
+.btn-secondary:focus { box-shadow: 0 0 0 4px rgba(37,99,235,0.16); }
 
-.btn-outline-update {
-  color: #007bff;
-  border: 1px solid #007bff;
-  background: transparent;
-}
-.btn-outline-update:hover { background:#007bff; color:#fff; }
+/* View (Indigo) */
+.btn-view { background-color: #4f46e5; }
+.btn-view:hover { background-color: #4338ca; }
+.btn-view:focus { box-shadow: 0 0 0 4px rgba(79,70,229,0.16); }
 
-.btn-outline-delete {
-  color: #dc3545;
-  border: 1px solid #dc3545;
-  background: transparent;
-}
-.btn-outline-delete:hover { background:#dc3545; color:#fff; }
+/* Warning (Amber) */
+.btn-warning { background-color: #f59e0b; color: #fff; }
+.btn-warning:hover { background-color: #d97706; }
+.btn-warning:focus { box-shadow: 0 0 0 4px rgba(245,158,11,0.16); }
+
+/* Danger (Red) */
+.btn-danger { background-color: #dc2626; }
+.btn-danger:hover { background-color: #b91c1c; }
+.btn-danger:focus { box-shadow: 0 0 0 4px rgba(220,38,38,0.16); }
+
+/* Neutral (Gray) */
+.btn-neutral { background-color: #6b7280; }
+.btn-neutral:hover { background-color: #4b5563; }
+.btn-neutral:focus { box-shadow: 0 0 0 4px rgba(107,114,128,0.16); }
+
+/* Sizes */
+.btn-sm { padding: 0.25rem 0.5rem; font-size: 0.875rem; border-radius: 0.375rem; }
+.btn-lg { padding: 0.75rem 1.5rem; font-size: 1.0625rem; border-radius: 0.5rem; }
+
+/* Utility: allow existing classes to coexist (e.g., w-100 from Bootstrap) */
+.btn.w-100, .btn.w-100 { width: 100%; }
+
+/* Ensure anchors and inputs get same behavior */
+a.btn, input.btn { text-decoration: none; display: inline-flex; }
