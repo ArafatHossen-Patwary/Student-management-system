@@ -1,0 +1,55 @@
+/* Button color overrides / custom button styles */
+.btn.btn-create {
+  background-color: #28a745;
+  color: #fff;
+  border-color: #28a745;
+}
+.btn.btn-create:hover,
+.btn.btn-create:focus {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn.btn-update {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+.btn.btn-update:hover,
+.btn.btn-update:focus {
+  background-color: #0069d9;
+  border-color: #005cbf;
+}
+
+.btn.btn-delete {
+  background-color: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+.btn.btn-delete:hover,
+.btn.btn-delete:focus {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* Optional: outline variants */
+.btn-outline-create {
+  color: #28a745;
+  border: 1px solid #28a745;
+  background: transparent;
+}
+.btn-outline-create:hover { background:#28a745; color:#fff; }
+
+.btn-outline-update {
+  color: #007bff;
+  border: 1px solid #007bff;
+  background: transparent;
+}
+.btn-outline-update:hover { background:#007bff; color:#fff; }
+
+.btn-outline-delete {
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  background: transparent;
+}
+.btn-outline-delete:hover { background:#dc3545; color:#fff; }
