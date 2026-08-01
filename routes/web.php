@@ -10,9 +10,9 @@ use App\Models\Teacher;
 use App\Models\Department;
 use App\Models\Course;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/dashboard', function () {
     $totalStudents = Student::count();
