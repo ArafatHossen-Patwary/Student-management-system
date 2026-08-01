@@ -63,7 +63,7 @@
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                         <a href="{{ route('departments.show', $department) }}"
-                                            class="btn btn-view inline-flex items-center px-3 py-1 text-white font-bold rounded mr-2 text-xs border border-transparent shadow-sm">View</a>
+                                            class="btn btn-primary inline-flex items-center px-3 py-1 text-white font-bold rounded mr-2 text-xs border border-transparent shadow-sm">View</a>
 
                                         <a href="{{ route('departments.edit', $department) }}"
                                             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded mr-2 text-xs">Edit</a>
