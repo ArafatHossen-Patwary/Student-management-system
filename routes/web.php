@@ -9,10 +9,15 @@ use App\Models\Student;
 use App\Models\Teacher;
 use App\Models\Department;
 use App\Models\Course;
+use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+
+Route::redirect('/', '/login');
+
 
 Route::get('/dashboard', function () {
     $totalStudents = Student::count();
